@@ -2,7 +2,7 @@ ALFBY
 
 Passo a passo para uso da aplicacao:
 
-1. Clone o repositório utilizando o comando git clone para baixar os arquivos do projeto para sua máquina.
+1. Clone o repositório utilizando o comando git para baixar os arquivos do projeto para sua máquina: git clone https://github.com/vinicius1med/ALFBYweb.git
 2. Navegue até o diretório do projeto clonado (/ALFBY).
 3. Inicie uma máquina virtual python (virtual environment) no diretório do projeto com o comando (python -m venv nome_da_maquina_virtual).
 4. Ative a máquina virtual: 
