@@ -22,7 +22,7 @@ def upload_image():
         os.makedirs(os.path.dirname(image_path), exist_ok=True)
         file.save(image_path)
 
-        genai.configure(api_key="AIzaSyBq2nc05mUMNpuyQMsW-j69L7Qtl-Chf0A")
+        genai.configure(api_key="GEMINI_API_KEY")
         model = genai.GenerativeModel("gemini-1.5-flash")
 
         with Image.open(image_path) as img:
