@@ -31,3 +31,11 @@ Passo a passo para uso da aplicação:
 Aproveite!
 
 Link para acesso à documentação: https://drive.google.com/file/d/1kvkQX55X7TGegHSO7UBMaLHDuNy5bv5_/view?usp=drivesdk
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Parceria de desenvolvimento:
+- Tayná (https://github.com/taynaellen)
+- Cayo (https://github.com/CandyDelChurros)
+
+Repositório inicial: https://github.com/CandyDelChurros/ALFBYweb
