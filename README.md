@@ -1,5 +1,11 @@
 ALFBYweb
 
+ALFBY é um projeto voltado para auxiliar crianças no aprendizado da escrita, oferecendo uma interface acessível 
+para professores acompanharem. A aplicação permite que as crianças desenhem letras, enquanto uma IA verifica se 
+a forma corresponde ao caractere esperado, tornando o ensino mais inclusivo e interativo.
+
+-------------------------------------------------------------------------------------------------------------------------
+
 Passo a passo para uso da aplicação:
 
 1. Clone o repositório utilizando o git para baixar os arquivos do projeto em sua máquina:
