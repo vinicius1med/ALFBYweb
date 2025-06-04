@@ -8,7 +8,7 @@ Passo a passo para uso da aplicação:
 2. Acesse o diretório do projeto clonado (/ALFBYweb).
 
         > cd ALFBYweb
-3. Inicie uma máquina virtual python (virtual environment) neste diretório:
+3. Inicie uma máquina virtual python (virtual environment):
 
         > python -m venv nome_da_maquina_virtual
 4. Ative a máquina virtual:
