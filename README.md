@@ -30,4 +30,4 @@ Passo a passo para uso da aplicação:
 
 Aproveite!
 
-Link para acesso a documentacao: https://drive.google.com/file/d/1kvkQX55X7TGegHSO7UBMaLHDuNy5bv5_/view?usp=drivesdk
+Link para acesso à documentação: https://drive.google.com/file/d/1kvkQX55X7TGegHSO7UBMaLHDuNy5bv5_/view?usp=drivesdk

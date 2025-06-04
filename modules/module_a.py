@@ -2,6 +2,9 @@ from flask import Blueprint, render_template, request, jsonify
 from PIL import Image
 import google.generativeai as genai
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 module_a_blueprint = Blueprint('module_a', __name__,url_prefix='/module_a')
 
@@ -21,8 +24,13 @@ def upload_image():
         image_path = os.path.join('static', 'img', 'desenho.png')
         os.makedirs(os.path.dirname(image_path), exist_ok=True)
         file.save(image_path)
+        
+        api_key = os.getenv("GOOGLE_API_KEY")
+        
+        if not api_key:
+            return jsonify({'message': 'API Key not found'}), 500
 
-        genai.configure(api_key="GEMINI_API_KEY")
+        genai.configure(api_key=api_key)
         model = genai.GenerativeModel("gemini-1.5-flash")
 
         with Image.open(image_path) as img:

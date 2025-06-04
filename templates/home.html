@@ -8,25 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/048f53145f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
-        <div class="left-side">
-            <h1>ALFby &copy;</h1>
-            <p>A ALFby trata-se de uma ferramenta para auxiliar crianças com deficiência visual e seus tutores no processo alfabetização, particularmente, na aprendizagem da escrita das letras.</p>
-            <div class="div-start">
-                <button class="start" data-route="{{ url_for('module') }}"> <b>Começar</b> </button>
-            </div>
-        </div>
-        <div class="right-side">
-            <div class="img">
-                <ul>
-                    <li>Plugue a mesa digitalizadora</li>
-                    <li>Navegue entre os módulos</li>
-                    <li>Selecione a letra desejada</li>
-                </ul>
-            </div>
-        </div>
+        <a data-route="{{ url_for('about_us') }}" class="sobre"><i class="fa-solid fa-circle-info fa-lg"></i>SOBRE NÓS</a>
+        <button class="start" data-route="{{ url_for('instructions') }}"> <b>JOGAR</b> </button>
     </div>
     <script src="/static/script/navegation.js"></script>
 </body>

@@ -1,3 +1,24 @@
+const audio = new Audio('/static/audio/a.m4a');
+
+function toggleAudio() {
+    if (audio.paused) {
+        console.log('Reproduzindo o áudio...');
+        audio.play()
+            .then(() => console.log('Áudio reproduzido com sucesso.'))
+            .catch(err => console.error('Erro ao reproduzir o áudio:', err));
+    } else {
+        console.log('Pausando o áudio...');
+        audio.pause();
+    }
+}
+
+const button = document.getElementById('song');
+if (button) {
+    button.addEventListener('click', toggleAudio);
+} else {
+    console.error('Botão com ID "song" não encontrado.');
+}
+
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 let drawing = false;
@@ -28,7 +49,7 @@ canvas.addEventListener('mouseup', () => {
 canvas.addEventListener('mousemove', (event) => {
     if (!drawingEnabled || !drawing) return;
     draw(event);
-    resetInactivityTimeout(); // Reset the inactivity timeout during drawing
+    resetInactivityTimeout(); 
 });
 
 resizeCanvas(); 
@@ -52,7 +73,7 @@ function draw(event) {
 
 function resetInactivityTimeout() {
     clearTimeout(inactivityTimeout);
-    inactivityTimeout = setTimeout(saveDrawing, 1000);  // Trigger save after 1 second of inactivity
+    inactivityTimeout = setTimeout(saveDrawing, 1000);  
 }
 
 function saveDrawing() {
@@ -95,3 +116,4 @@ function saveDrawing() {
         });
     }, 'image/png');
 }
+
